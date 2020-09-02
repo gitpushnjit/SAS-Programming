@@ -9,7 +9,7 @@ SAS Studio
 /**************************************************
 Setting up a Library Path
  **************************************************/
-%let path=/home/u49493294/ECRB94/data;
+%let path=/home/data;
 libname tsa"&path";
 options validvarname=v7;
 
@@ -109,7 +109,7 @@ Analyzing Data
 %let StateName=Hawaii;
 
 /*Exporting the Output File*/
-%let outpath=/home/u49493294/ECRB94/output;
+%let outpath=/home/output;
 ods pdf file="&outpath/TSAClaimsReport.pdf" style=Plateau pdftoc=1;
 ods noproctitle;
 
